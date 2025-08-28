@@ -1,4 +1,9 @@
-h1,h2,h3{
+/* h1,h2,h3{
     background-color: brown;
     color: white;
+} */
+
+div>p{
+    background-color: #12ec0a;
+    color: aliceblue;
 }
