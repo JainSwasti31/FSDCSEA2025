@@ -68,7 +68,7 @@ body {
 
 .subheader{
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 5;
     display: flex;
@@ -84,7 +84,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around; */
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 400px 500px 200px;
+    grid-template-rows: 280px 200px;
     border: 1px solid red;
 }
 /* .header{
@@ -255,3 +255,16 @@ p:nth-child(3){
     color: aqua;
     background-color: #fff;
 } */
+
+Footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #131921;
+    padding: 10px 20px;
+    color: white;
+}
