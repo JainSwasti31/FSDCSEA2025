@@ -14,5 +14,37 @@ const root=ReactDOM.createRoot(parent);
 // // root.render(ul)
 
 // JSX
-const h21=<h2>Hello, I am using JSX</h2>
-root.render(h21)
+// const h21=<h2>Hello, I am using JSX</h2>
+// root.render(h21)
+
+function App(){
+    const student=[{
+        name:"Swasti",
+        age:19,
+        branch:"CSE",
+        college:"ABES Engineering College",
+        location:"Ghaziabad"
+    },
+    {
+        name:"Swasti",
+        age:19,
+        branch:"CSE",
+        college:"ABES Engineering College",
+        location:"Ghaziabad"
+    },
+    {
+        name:"Swasti",
+        age:19,
+        branch:"CSE",
+        college:"ABES Engineering College",
+        location:"Ghaziabad"
+    }]
+    return (
+        <div>
+            <h2>ABES Engineering College</h2>
+            {/* <Gallery/> */}
+            <ICard data={student}/>
+            {student.map((ele,index))}
+        </div>
+    )
+}
