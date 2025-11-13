@@ -1,13 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
  import 'bootstrap/dist/css/bootstrap.min.css';
 function Login() {
+    const [email, setEmail]=useState()
+    const [password, setPassword]=useState()
+
+    function verification(e){
+        e.preventDefault()
+        if(loginData.email===email){
+          if(loginData.password===password){
+            navigate('/dashboard')
+          }
+          else{
+            alert("Password is not correct")
+          }
+        }
+        else{
+          alert("Email is not registered")
+        }
+    }
   return (
     <div>
         <h2>Login Form</h2>
         <form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+    <input type="email" onChange={(e)>setEmail(e.target.value)} class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
